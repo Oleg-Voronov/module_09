@@ -10,7 +10,7 @@ def get_advanced_writer(file_name):
     def write_everything(*data_set):
         with open(file_name,'w',encoding='utf-8') as file:
             for elem in data_set:
-                file.write(str(elem))
+                file.write(str(elem)+'\n')
     return write_everything
 
 # Метод __call__
