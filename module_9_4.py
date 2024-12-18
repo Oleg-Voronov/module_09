@@ -18,7 +18,6 @@ m_words = Magic_Words('Да', 'Нет', 'Наверное','Наверняка',
 for i in range(0,10):
     print(m_words())
 
-
 # "Замыкание"
 write = get_advanced_writer('example.txt')
 write('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
