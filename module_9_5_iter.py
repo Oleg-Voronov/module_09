@@ -19,32 +19,18 @@ class Iterator:
             raise StopIteration
         return self.pointer
 
-try:
-    iter1 = Iterator(100, 200, 0)
-    for i in iter1:
-        print(i, end=' ')
-except StepValueError:
-    print('Шаг указан неверно')
+def go_iter(start,stop,step=1):
+    try:
+        iter_ = Iterator(start, stop,step)
+        for i in iter_:
+            print(i, end=' ')
+        print()
+    except StepValueError:
+        print('Шаг указан неверно')
 
+go_iter(100,200,0)
+go_iter(-5, 1)
+go_iter(6, 15, 2)
+go_iter(5, 1, -1)
+go_iter(10, 1)
 
-iter2 = Iterator(-5, 1)
-iter3 = Iterator(6, 15, 2)
-iter4 = Iterator(5, 1, -1)
-iter5 = Iterator(10, 1)
-
-
-for i in iter2:
-    print(i, end=' ')
-print()
-
-for i in iter3:
-    print(i, end=' ')
-print()
-
-for i in iter4:
-    print(i, end=' ')
-print()
-
-for i in iter5:
-    print(i, end=' ')
-print()
