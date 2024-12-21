@@ -4,7 +4,7 @@ def is_print(func):
         if isinstance(result,int):
             print('Простое')
         else:
-            print('Сложное')
+            print('Составное')
         return result
     return wrapper
 
